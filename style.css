@@ -47,6 +47,11 @@ body {
   background-image: url("aseets/images/cover\ 1.jpg");
   background-size: cover;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+  animation: rotate 20s linear infinite;
+  animation-play-state: paused;
+}
+.disk.play {
+  animation-play-state: running;
 }
 .disk::before {
   content: "";
@@ -88,9 +93,9 @@ body {
   right: 0;
 }
 .controls {
-  width: 100%;
+  width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   margin-top: 20px;
@@ -142,5 +147,29 @@ body {
   }
   100% {
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
+  }
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  background: #d5eebb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

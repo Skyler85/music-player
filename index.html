@@ -8,6 +8,7 @@
     <title>Music Player</title>
   </head>
   <body>
+    <audio sec="" id="audio"></audio>
     <div class="music-player">
       <h1 class="music-name">song 1</h1>
       <p class="artist-name">artist</p>
@@ -19,14 +20,18 @@
         <span class="song-duration">00:00</span>
       </div>
       <div class="controls">
-        <button class="btn backward-btn"><img src="images/pre.jpg" /></button>
+        <button class="btn backward-btn">
+          <img src="aseets/images/pre.png" />
+        </button>
         <button class="play-btn"><span></span><span></span></button>
-        <button class="btn forward-btn"><img src="images/pre.jpg" /></button>
+        <button class="btn forward-btn">
+          <img src="aseets/images/nxt.png" />
+        </button>
       </div>
     </div>
 
-    <script src="app.js"></script>
     <script src="data.js"></script>
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/2cb7ce3cc7.js"
       crossorigin="anonymous"
