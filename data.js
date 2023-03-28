@@ -1,14 +1,14 @@
 let songs = [
   {
     name: "Only U(Original)",
-    path: "assets/musics/song 1.mp3",
+    path: "/assets/musics/song 1.mp3",
     artist: "Moon Sujin & Jiselle",
     cover: "assets/images/cover 1.jpg",
     // Moon Sujin & Jiselle(지젤) - Only U (Original ver. ) Official Lyric Video
   },
   {
     name: "old school love",
-    path: "assets/musics/song 2.mp3",
+    path: "/assets/musics/song 2.mp3",
     artist: "leejean",
     cover: "assets/images/cover 2.jpg",
     // leejean - old school love
