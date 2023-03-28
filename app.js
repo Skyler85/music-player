@@ -27,4 +27,15 @@ const setMusic = (i) => {
 
   songName.innerHTML = song.name;
   artistName.innerHTML = song.artist;
+  disk.type.backgroundImage
+= `url('${song.cover}')`;
+
+  currentTime.innerHTML = '00:00';
+
+  setTimeout(()=>{
+    seekBar.max = music.duration;
+    console.log(music.duration);
+  },300);
+};
+setMusic(0);
 };
