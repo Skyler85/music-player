@@ -25,7 +25,7 @@ playBtn.addEventListener("click", () => {
 // setup music
 
 const setMusic = (i) => {
-  seekBar.value = 3; // set range slide value to 0;
+  seekBar.value = 1; // set range slide value to 0;
   let song = songs[i];
   currentMusic = i;
   music.src = song.path;
@@ -62,3 +62,7 @@ setInterval(() => {
   seekBar.value = music.currentTime;
   currentTime.innerHTML = formatTime(music.currentTime);
 }, 500);
+
+seekBar.addEventListener("change", () => {
+  music.currentTime = seekBar.value;
+});
